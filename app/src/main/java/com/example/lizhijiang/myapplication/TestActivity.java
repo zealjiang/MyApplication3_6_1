@@ -1,6 +1,7 @@
 package com.example.lizhijiang.myapplication;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.TestLooperManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
+        Log.d("mtest","onCreate");
 
 
 /*        findViewById(R.id.btnFinish).setOnClickListener(new View.OnClickListener() {
@@ -163,5 +165,12 @@ public class TestActivity extends AppCompatActivity {
         public void setAge(int age) {
             this.age = age;
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        Log.d("mtest","onNewIntent");
     }
 }

@@ -13,8 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lottie.LottieDemoActivity"></activity>
-        <activity android:name=".text.TextShadowActivity">
+        <activity android:name=".text.TextShadowActivity"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
         <activity
             android:name=".DashLineAlphaChangeActivity"
             android:launchMode="singleTask" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".lottie.LottieDemoActivity" />
         <activity android:name=".event.EventActivity" />
         <activity android:name=".PicClipActivity" />
         <activity android:name=".VerticalTextViewActivity" />

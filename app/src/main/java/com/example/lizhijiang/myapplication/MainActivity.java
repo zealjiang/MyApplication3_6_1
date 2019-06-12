@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, WordartActivity.class);
+/*        Intent intent = new Intent(this, WordartActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        startActivity(intent);*/
 
         Intent it = new Intent(this, TestActivity.class);
         startActivity(it);
