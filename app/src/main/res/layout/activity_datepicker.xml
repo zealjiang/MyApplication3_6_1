@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lizhijiang.myapplication.picker.YearPicker
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yearPicker"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:itemHeightSpace="5dp"
+        android:background="#333333"
+        />
+</RelativeLayout>

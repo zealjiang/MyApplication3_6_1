@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lizhijiang.myapplication.lrc.LrcView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lrc_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#333333"
+        app:lrcAnimationDuration="1000"
+        app:lrcCurrentTextColor="#ffffff"
+        app:lrcDividerHeight="20dp"
+        app:lrcNormalTextColor="#ffffff"
+        app:lrcTextSize="18sp"
+        app:lrcTimelineColor="#4dffffff"
+        app:lrcTimeTextColor="#BDBDBD"
+        app:lrcTextGravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="finish me"
+        />
+    <TextView
+        android:id="@+id/btnFinish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="finish me 上层"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tvfull"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:text="占一个汉字文是小编专门为那些还不知道PIN码是什么的童鞋写"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/test1"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:divider="@drawable/line"
+        android:padding="5dp">
+
+        <Button
+            android:text="sdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="sdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="sdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

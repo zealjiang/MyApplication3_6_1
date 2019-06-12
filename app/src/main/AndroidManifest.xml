@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lizhijiang.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lottie.LottieDemoActivity"></activity>
+        <activity android:name=".text.TextShadowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProjectionActivity" />
+        <activity
+            android:name=".DashLineAlphaChangeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".event.EventActivity" />
+        <activity android:name=".PicClipActivity" />
+        <activity android:name=".VerticalTextViewActivity" />
+        <activity android:name=".lrc.LRCShowActivity" />
+        <activity android:name=".ViewAddRemoveActivity" />
+        <activity android:name=".TestTypefaceTextRemoveAddActivity" />
+        <activity android:name=".SoftwareUpViewUpActivity" />
+        <activity android:name=".TestSubtitleTypefaceActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".lrc.SoundTextShowActivity" />
+        <activity android:name=".picker.DatePickerActivity" />
+        <activity android:name=".event.EventActivityButtonTextView" />
+    </application>
+
+</manifest>

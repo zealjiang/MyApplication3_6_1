@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="WheelItemTextSize">13sp</dimen>
+    <dimen name="WheelSelectedItemTextSize">20sp</dimen>
+    <dimen name="WheelItemSpace">5dp</dimen>
+    <dimen name="WheelIndicatorSize">2dp</dimen>
+    <dimen name="WheelMargins">8dp</dimen>
+    <dimen name="WheelItemHeightSpace">5dp</dimen>
+    <dimen name="WheelItemWidthSpace">32dp</dimen>
+
+    <integer name="lrc_animation_duration">1000</integer>
+    <dimen name="lrc_text_size">16dp</dimen>
+    <dimen name="lrc_time_text_size">12sp</dimen>
+    <dimen name="lrc_divider_height">10dp</dimen>
+    <dimen name="lrc_timeline_height">1dp</dimen>
+    <dimen name="lrc_drawable_width">30dp</dimen>
+    <dimen name="lrc_time_width">40dp</dimen>
+</resources>
