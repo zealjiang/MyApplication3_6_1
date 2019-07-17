@@ -41,6 +41,7 @@
         <activity android:name=".lrc.SoundTextShowActivity" />
         <activity android:name=".picker.DatePickerActivity" />
         <activity android:name=".event.EventActivityButtonTextView" />
+        <activity android:name=".text.SpannableStringActivity"></activity>
     </application>
 
 </manifest>
