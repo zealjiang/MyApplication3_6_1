@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lizhijiang.myapplication">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <application
         android:name=".AppApplication"
         android:allowBackup="true"
@@ -13,9 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestViewtreeObserverActivity"></activity>
-        <activity android:name=".text.TextShadowActivity"></activity>
-        <activity android:name=".TestReboundHScrollViewActivity">
+        <activity android:name=".kotlint.TestGrammar"></activity>
+        <activity android:name=".TestViewtreeObserverActivity" />
+        <activity android:name=".text.TextShadowActivity" />
+        <activity android:name=".opengl.Lesson">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +26,7 @@
         <activity
             android:name=".DashLineAlphaChangeActivity"
             android:launchMode="singleTask" />
+        <activity android:name=".TestReboundHScrollViewActivity" />
         <activity android:name=".lottie.LottieDemoActivity" />
         <activity android:name=".event.EventActivity" />
         <activity android:name=".PicClipActivity" />
@@ -41,7 +40,10 @@
         <activity android:name=".lrc.SoundTextShowActivity" />
         <activity android:name=".picker.DatePickerActivity" />
         <activity android:name=".event.EventActivityButtonTextView" />
-        <activity android:name=".text.SpannableStringActivity"></activity>
+        <activity android:name=".text.SpannableStringActivity" />
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
