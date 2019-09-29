@@ -13,7 +13,7 @@
         <activity android:name=".kotlint.TestGrammar"></activity>
         <activity android:name=".TestViewtreeObserverActivity" />
         <activity android:name=".text.TextShadowActivity" />
-        <activity android:name=".opengl.Lesson">
+        <activity android:name=".text.TextClipRectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +41,7 @@
         <activity android:name=".picker.DatePickerActivity" />
         <activity android:name=".event.EventActivityButtonTextView" />
         <activity android:name=".text.SpannableStringActivity" />
+        <activity android:name=".opengl.Lesson"/>
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
