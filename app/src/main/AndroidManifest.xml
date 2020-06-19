@@ -13,7 +13,7 @@
         <activity android:name=".kotlint.TestGrammar"></activity>
         <activity android:name=".TestViewtreeObserverActivity" />
         <activity android:name=".text.TextShadowActivity" />
-        <activity android:name=".Test9PatchActivity">
+        <activity android:name=".TestTypefaceTextRemoveAddActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Test9PatchActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ProjectionActivity" />
         <activity
@@ -33,10 +34,9 @@
         <activity android:name=".VerticalTextViewActivity" />
         <activity android:name=".lrc.LRCShowActivity" />
         <activity android:name=".ViewAddRemoveActivity" />
-        <activity android:name=".TestTypefaceTextRemoveAddActivity" />
+        <activity android:name=".TestActivity" />
         <activity android:name=".SoftwareUpViewUpActivity" />
         <activity android:name=".TestSubtitleTypefaceActivity" />
-        <activity android:name=".TestActivity" />
         <activity android:name=".lrc.SoundTextShowActivity" />
         <activity android:name=".picker.DatePickerActivity" />
         <activity android:name=".event.EventActivityButtonTextView" />

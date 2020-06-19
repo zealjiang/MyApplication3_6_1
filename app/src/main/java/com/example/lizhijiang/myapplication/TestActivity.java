@@ -6,11 +6,14 @@ import android.os.TestLooperManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.lizhijiang.myapplication.kotlint.TestGrammar;
+import com.example.lizhijiang.myapplication.util.FontUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -81,6 +84,19 @@ public class TestActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        //测试换行
+        String content = "中国空军专家\n傅前哨\n11月10日接受《环球时报》记者采访时说，双11不仅是购物节，更是人民空军的生日。对于要如何建设一支世界一流空军，傅前哨表示，中国官方之前曾提出要建设一流军队，这是面向全军讲的，从空军军种角度讲，建设世界一流空军也是顺理成章的。“空天一体，攻防兼备”是人民空军的发展战略，最终要达到的目标就是建设世界一流空军。";
+        TextView tvLinefeed = findViewById(R.id.tvLinefeed);
+        content = FontUtil.autoInsertLinefeed(tvLinefeed,240,4,true,false,content);
+/*        String[] contentAndline = FontUtil.handleTextWidthLines(tvLinefeed,content,240,3);
+        Log.d("mtest","lineNum :"+contentAndline[1]);
+        Log.d("mtest","content :"+contentAndline[0]);*/
+        tvLinefeed.setText(content);
+        //tvLinefeed.setMaxLines(2);
+        tvLinefeed.setMovementMethod(ScrollingMovementMethod.getInstance());
+        String getText = tvLinefeed.getText().toString();
+        //Log.d("mtest","getText :"+getText);
     }
 
     public static String toUtf8(String str) {
